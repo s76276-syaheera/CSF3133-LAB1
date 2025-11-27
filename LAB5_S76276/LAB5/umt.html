@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMT Website</title>
+    <link rel="stylesheet" href="umt.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Scroll Picture -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("a[href^='#']").forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+            <img src="logo umt.png" alt="UMT Logo" class="logo-img">
+            <span>UMT</span>
+        </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Sections ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#program">Program Pengajian</a></li>
+                        <li><a href="#visimisi">Visi & Misi</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#sejarah">Sejarah UMT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <section id="home" class="slider">
+        <div class="slides">
+            <img src="UMT_gambar1.png">
+            <img src="UMT_gambar5.png">
+            <img src="UMT_gambar6.png">
+            <img src="UMT_gambar4.png">
+        </div>
+    </section>
+
+    <!-- HOME CONTENT -->
+    <section class="content-section">
+        <h2>Selamat Datang ke Universiti Malaysia Terengganu</h2>
+        <p>
+            Universiti Malaysia Terengganu (UMT) is a leading education institution focusing on
+            marine science, environmental studies, technology, and innovation.
+        </p>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="content-section">
+        <h2>Program Pengajian</h2>
+
+        <table>
+            <tr>
+                <th>Fakulti</th>
+                <th>Program</th>
+            </tr>
+            <tr>
+                <td>Fakulti Sains Sekitaran & Marin (FSSM)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Sains (Sains Biologi) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Sains Kimia) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Biologi Marin) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Kimia Analisis dan Persekitaran) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Sains Marin) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Gunaan (Pemuliharaan dan Pengurusan Biodiversiti) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Geosains Marin) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Gunaan Nanofizik dengan Kepujian</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Fakulti Sains Makanan dan Agroteknologi (FSMA)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Sains Makanan (Teknologi Makanan) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Makanan (Perkhidmatan Makanan dan Pemakanan) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Agroteknologi (Sains Tanaman) dengan Kepujian</li>
+                        <li>Sarjana Muda Teknologi Pemprosesan Agro dengan Kepujian</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Fakulti Sains Perikanan & Akuakultur (FSPA)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Sains Gunaan (Perikanan) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Akuakultur dengan Kepujian</li>
+                        <li>Diploma Perikanan</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Fakulti Teknologi Kejuruteraan Kelautan (FTKK)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Sains Gunaan (Teknologi Maritim) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Gunaan (Elektronik dan Instrumentasi) dengan Kepujian</li>
+                        <li>Sarjana Muda Teknologi (Alam Sekitar) dengan Kepujian</li>
+                        <li>Sarjana Muda Teknologi Kejuruteraan Mekanikal (Senibina Kapal) dengan Kepujian</li>
+                        <li>Sarjana Muda Teknologi Tenaga Boleh Diperbaharui Dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Gunaan (Pemuliharaan dan Pengurusan Biodiversiti) dengan Kepujian</li>
+                        <li>Sarjana Muda Teknologi Elektrik (Tenaga Dan Kuasa) Dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Gunaan (Teknologi Maritim) Dengan Kepujian (Dual Degree)</li>
+                    </ul>
+                </td>
+            </tr><tr>
+                <td>Fakulti Pengajian Maritim (FPM)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Pengurusan (Maritim) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Sains Nautika dan Pengangkutan Maritim) dengan Kepujian</li>
+                        <li>Sarjana Muda Pengurusan Operasi Maritim dengan Kepujian dengan Kepujian</li>
+                    </ul>
+                </td>
+            </tr>
+            </tr><tr>
+                <td> Fakulti Perniagaan, Ekonomi Dan Pembangunan Sosial (FPEPS)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Kaunseling dengan Kepujian</li>
+                        <li>Sarjana Muda Pengurusan (Pengajian Polisi) dengan Kepujian</li>
+                        <li>Sarjana Muda Ekonomi (Sumber Alam) dengan Kepujian</li>
+                        <li>Sarjana Muda Perakaunan dengan Kepujian</li>
+                        <li>Sarjana Muda Pengurusan (Pemasaran) dengan Kepujian</li>
+                        <li>Sarjana Muda Pengurusan (Pelancongan) dengan Kepujian</li>
+                    </ul>
+                </td>
+            </tr>
+            </tr><tr>
+                <td>Fakulti Sains Komputer dan Matematik (FSKM)</td>
+                <td>
+                    <ul>
+                        <li>Sarjana Muda Sains Komputer (Kejuruteraan Perisian) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Komputer dengan Informatik Maritim dengan Kepujian</li>
+                        <li>Sarjana Muda Sains Komputer (Komputeran Mudah Alih) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Matematik Gunaan) dengan Kepujian</li>
+                        <li>Sarjana Muda Sains (Matematik Kewangan) dengan Kepujian </li>
+                        <li>Sarjana Muda Sains (Analitik Data) dengan Kepujian</li>
+                    </ul>
+                </td>
+            </tr>
+            </tr><tr>
+                <td>Pusat Asasi STEM</td>
+                <td>Asasi STEM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- VISI & MISI -->
+    <section id="visimisi" class="content-section">
+        <h2>Visi & Misi UMT</h2>
+
+        <h3>Visi</h3>
+        <p>
+            Universiti berfokus marin terunggul dalam negara dan disegani di peringkat global.
+        </p>
+
+        <h3>Misi</h3>
+        <p>
+            Menjana ilmu untuk kesejahteraan masyarakat dan kelestarian alam.
+        </p>
+
+        <h3>Slogan</h3>
+        <p>
+            Terokaan Seluas Lautan Demi Kelestarian Sejagat.
+        </p>
+
+        <h3>Objektif</h3>
+        <ul>
+            <li>Menerokai segala ilmu dalam semua bidang yang berkaitan dengan Sains, Teknologi dan Pengurusan Sumber Alam melalui penyelidikan.</li>
+            <li>Menawarkan program pengajian yang cemerlang untuk memenuhi keperluan semasa dan masa hadapan. Menghasilkan graduan yang bertanggungjawab, berilmu, berkeyakinan dan berketerampilan.</li>
+            <li>Menyediakan kemudahan terkini (makmal, perpustakaan, pengkomputeran dan persekitaran) sebagai menyokong pembangunan ilmu, pembelajaran dan kesarjanaan.</li>
+        </ul>
+    </section>
+
+    <!-- SEJARAH UMT -->
+    <section id="sejarah" class="content-section">
+        <h2>Sejarah UMT</h2>
+        <div class="Sejarah">
+            <img src="sejarah_umt.png" width="1200"> 
+        </div>
+        <p>
+            Universiti Malaysia Terengganu (UMT) telah bermula dengan sebuah Pusat Perikanan dan Sains Samudera pada tahun 1979, 
+            yang menyediakan kemudahan latihan pelajar Program Perikanan dan Sains Samudera di samping menyediakan kemudahan penyelidikan untuk pensyarah. 
+            Melalui Penstrukturan semula program akademik di UPM, keseluruhan Fakulti Perikanan dan Sains Samudera telah dipindahkan ke Terengganu dan 
+            diberi nama baru iaitu Fakulti Sains Gunaan dan Teknologi (FSGT) mulai Jun 1996. Turut ditubuhkan ialah Fakulti Sains dan Sastera Ikhtisas 
+            (FSSI) dan Pusat Pengajian Matrikulasi (PPM).
+
+            Mulai Jun 1996, kampus ini telah diiktiraf (secara dalaman UPM) sebagai sebuah pusat tanggungjawab dan dinamakan Universiti Pertanian Malaysia 
+            Cawangan Terengganu (UPMT) dan diketuai oleh seorang Rektor (designate). Jemaah Menteri dalam mesyuaratnya pada 5 Mei 1999 telah bersetuju 
+            meluluskan cadangan penubuhan Kolej Universiti Terengganu (KUT) berasaskan Pusat Perikanan dan Sains Samudera Universiti Pertanian Malaysia di 
+            Mengabang Telipot, Kuala Terengganu. 
+
+            Perintah Kolej Universiti Terengganu (Perbadanan) 1999 (PUA 292) telah diluluskan oleh Dewan Rakyat pada 26 Julai 1999. KUT adalah Kampus 
+            bersekutu UPM dan pelajar akan dikurniakan ijazah dari UPM. KUT telah diberi kuasa autonomi sebagai Kolej Universiti Terengganu pada 1 Mei 2001. 
+            Pada 1 Julai 2001 KUT dengan rasminya telah bertukar nama sebagai Kolej Universiti Sains dan Teknologi Malaysia dengan singkatan KUSTEM. 
+
+            Bermula pada 1 Februari 2007 bersamaan 13 Muharam 1428 H, tercipta satu lagi sejarah dalam sistem pendidikan di Malaysia. Dalam usaha 
+            mengukuhkan kedudukan IPTA Negara, enam buah Kolej Universiti telah melalui penjenamaan semula kolej-kolej universiti. Kini KUSTEM di kenali 
+            sebagai Universiti Malaysia Terengganu.
+        </p>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="content-section">
+        <h2>Galeri UMT</h2>
+
+        <div class="gallery">
+            <img src="UMT_gambar1.png">
+            <img src="UMT_gambar2.png">
+            <img src="UMT_gambar3.png">
+            <img src="UMT_gambar4.png">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Universiti Malaysia Terengganu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* GENERAL STYLE */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #eef6ff;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background: #3f025b;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+}
+
+.logo-img {
+    width: 80px;  /* adjust size as needed */
+    height: auto;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #c298e6;
+    min-width: 180px;
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #fec0ff;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+    animation: slide 14s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 20% { margin-left: 0; }
+    25%, 45% { margin-left: -100%; }
+    50%, 70% { margin-left: -200%; }
+    75%, 100% { margin-left: -300%; }
+}
+
+/* CONTENT BOX */
+.content-section {
+    background: white;
+    margin: 40px auto;
+    padding: 40px 60px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    color: #3f025b;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #7f2192;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    background: #fdc3ff;
+    padding: 12px;
+    border: 1px solid #c087d0;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #3f025b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

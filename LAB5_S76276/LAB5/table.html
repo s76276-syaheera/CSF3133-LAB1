@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #customers td, #customer th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr :nth-child(even){
+                background-color: #d97e7e;
+            }
+
+            #customers tr :hover {
+                background-color: #faf79f;
+            }
+
+            #customers th {
+                padding-top: 12px;
+                text-transform: uppercase;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: #08d38c;
+                color: white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <th>Alfred Futterkiste</th>
+            <th>Maria Anders</th>
+            <th>Germany</th>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Hennet</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Magazzini Riumitt</td>
+            <td>Giovami Rovell</td>
+            <td>Italy</td>
+        </tr>
+        </table>
+    </body>
+</html>
