@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+}
+
+/* ================= SIDE NAV ================= */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background: purple;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.side-nav a {
+    display: block;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.side-nav a:hover {
+    background-color: #5e005e;
+}
+
+/* ================= MAIN CONTENT ================= */
+.content {
+    margin-left: 180px;
+}
+
+/* ================= SECTION BASE ================= */
+section {
+    padding: 80px 40px;
+    background: white;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url("background-image.jpg") center/cover no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 20px;
+}
+
+/* ================= FORM ON IMAGE ================= */
+.form-section {
+    background: #f4f4f4;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: pink;
+    padding: 25px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= SLIDESHOW ================= */
+.slideshow-section {
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ================= PROFILE ================= */
+.profile-section {
+    text-align: center;
+}
+
+.profile-card {
+    width: 300px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.profile-image {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.social-links i {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* ================= PROGRESS ================= */
+.progress-section {
+    background: #f4f4f4;
+}
+
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0%;
+    background: green;
+}
+
+/* ================= COLLAPSIBLE ================= */
+.collapsible {
+    width: 100%;
+    padding: 14px;
+    background: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 20px;
+    background: #eee;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}

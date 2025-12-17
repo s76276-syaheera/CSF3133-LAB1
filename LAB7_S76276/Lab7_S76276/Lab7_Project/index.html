@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 Personal Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ================= SIDE NAVIGATION ================= -->
+<nav class="side-nav">
+    <a href="#hero">Home</a>
+    <a href="#login">Login</a>
+    <a href="#slideshow">Gallery</a>
+    <a href="#profile">Profile</a>
+    <a href="#progress">Progress</a>
+    <a href="#faq">FAQ</a>
+</nav>
+
+<!-- ================= TRANSPARENT IMAGE TEXT ================= -->
+<section id="hero" class="hero">
+    <div class="overlay">
+        <h1>Love With Syaheera</h1>
+        <p>Biology Teacher | Nature Lover | Educator</p>
+    </div>
+</section>
+
+<!-- ================= FORM ON IMAGE ================= -->
+<section id="login" class="form-section">
+    <div class="image-container">
+        <img src="background-image.jpg" alt="Nature Background">
+
+        <div class="form-container">
+            <h2>Login</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ================= AUTOMATIC SLIDESHOW ================= -->
+<section id="slideshow" class="slideshow-section">
+    <h2>Who Am I?</h2>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="imagesslide1.jpeg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="imagesslide2.jpeg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="imagesslide3.jpeg" alt="Slide 3">
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROFILE CARD ================= -->
+<section id="profile" class="profile-section">
+    <div class="profile-card">
+        <img src="imagesprofile.jpeg" alt="Profile" class="profile-image">
+
+        <h3>Syaheera Hisham</h3>
+        <p class="title">Biology Teacher</p>
+        <p>Universiti Malaysia Terengganu</p>
+
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <button>Contact</button>
+    </div>
+</section>
+
+<!-- ================= PROGRESS BAR ================= -->
+<section id="progress" class="progress-section">
+    <h2>Love for Biology</h2>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</section>
+
+<!-- ================= COLLAPSIBLE SECTION ================= -->
+<section id="faq" class="collapsible-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="collapsible">Why Biology?</button>
+    <div class="collapsible-content">
+        <p>
+            Biology helps us understand life, nature, and the environment.
+            It encourages critical thinking and sustainability awareness.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
