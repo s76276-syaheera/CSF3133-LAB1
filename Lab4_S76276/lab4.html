@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(222, 107, 201);
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            text-decoration: underline;
+        }
+
+        header p {
+            text-decoration: overline;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            background-color: #64006b;
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 249, 254);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Link States */
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        nav ul li a:visited {
+            color: orange;
+        }
+
+        nav ul li a:active {
+            color: red;
+        }
+
+        /* Content sections */
+        section {
+            margin: 20px;
+        }
+
+        video {
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: #aaf4ff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: navy;
+        }
+
+        footer {
+            background-color: rgb(93, 1, 65);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to My Homepage</h1>
+        <p>My Favourite Song</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Halaman Utama</a></li>
+            <li><a href="#news">Berita Terkini</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+            <li><a href="#about">Mengenal Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- VIDEO MEDIA -->
+    <section id="media">
+        <h2>Anugerah Terindah</h2>
+        <video width="900" height="700" controls>
+            <source src="C:\Users\User\Documents\lab1 RBA WEB\Lab4_S76276\🔴BLACK - Anugerah Terindah (OFFICIAL MUSIC VIDEO).mp4" type="video/mp4">
+            Pelayar anda tidak menyokong tag video.
+        </video>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="form">
+        <h2>Registration Form</h2>
+
+        <form action="submit_form.php" method="post">
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Select your hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Cooking">
+            <label for="hobby1">Cooking</label><br>
+
+            <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+            <label for="hobby2">Gaming</label><br>
+
+            <input type="checkbox" id="hobby3" name="hobby3" value="Reading">
+            <label for="hobby3">Reading</label><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- ARTICLE -->
+    <section>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is an article about web development.</p>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Web Lab Exercise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
