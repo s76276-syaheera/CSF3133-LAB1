@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyeNaDa | Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-box">
+            <a href="index.html" class="logo-link">
+                <span class="brand-name">SyeNaDa</span>
+                <span class="tagline">Built for Style. Made to Last.</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa fa-user"></i> 
+            <div class="cart-icon-container">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-section">
+        <h2 style="text-align: left; margin-bottom: 20px;">➤ Tumbler</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="WideWhite.jpg" alt="Wide White">
+                <h3>Wide White 600ml</h3>
+                <p>RM34.00</p>
+                <button class="add-btn" data-name="Wide White 600ml" data-price="34.00">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="WideBlack.jpg" alt="Wide Black">
+                <h3>Wide Black 1000ml</h3>
+                <p>RM65.00</p>
+                <button class="add-btn" data-name="Wide Black 1000ml" data-price="65.00">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Widepeach.jpg" alt="Pink">
+                <h3>Wide Mouth Pink 1000ml</h3>
+                <p>RM78.00</p>
+                <button class="add-btn" data-name="Wide Mouth Pink 1000ml" data-price="78.00">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Emeralgreen.jpg" alt="Emeralgreen">
+                <h3>Standard Mouth Emeraldgreen 900ml</h3>
+                <p>RM55.00</p>
+                <button class="add-btn" data-name="Standard Mouth Emeraldgreen 900ml" data-price="55.00">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2 style="text-align: left; margin-top: 50px; margin-bottom: 20px;">➤ Accessories</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Accessory1.jpg" alt="Cleaning Set">
+                <h3>Straw Cleaning Set Pacific</h3>
+                <p>RM14.00</p>
+                <button class="add-btn" data-name="Straw Cleaning Set" data-price="14.00">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Accessory2.jpg" alt="Boot">
+                <h3>Medium Bottle Boot Pacific</h3>
+                <p>RM19.00</p>
+                <button class="add-btn" data-name="Bottle Boot Pacific" data-price="19.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: RM <span id="cart-total-price">0.00</span></div>
+            <button class="checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+
+    <div id="login-modal" class="login-modal">
+        <div class="login-content">
+            <span class="close-cart close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" class="login-input" placeholder="Email Address" required>
+                <input type="password" id="login-pass" class="login-input" placeholder="Password" required>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

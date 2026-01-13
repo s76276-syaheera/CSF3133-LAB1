@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyeNaDa | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-box">
+            <a href="index.html" class="logo-link">
+                <span class="brand-name">SyeNaDa</span>
+                <span class="tagline">Built for Style. Made to Last.</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa fa-user"></i> 
+            <div class="cart-icon-container">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer-main">
+        <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Term and Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Social</h4>
+            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                <i class="fab fa-instagram" style="color: #E1306C;"></i> 
+                <span>SyeNaDa</span>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                <i class="fab fa-facebook" style="color: #4267B2;"></i> 
+                <span>SyeNaDa Co.</span>
+            </a>
+        </div>
+        <div class="footer-col">
+            <h4>Company Details</h4>
+            <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
+                Email: hello@syenada.com<br><br>
+                Address: Syenada Commerce Sdn Bhd<br>
+                Sebelah UMT
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>Stay in touch</h4>
+            <p style="font-size: 0.8rem; margin-bottom: 15px;">Get 15% off your first order!</p>
+            <input type="email" class="newsletter-input" placeholder="Email Address">
+            <button class="btn-submit">Yes I'm In</button>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: RM <span id="cart-total-price">0.00</span></div>
+            <button class="checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+
+    <div id="login-modal" class="login-modal">
+        <div class="login-content">
+            <span class="close-cart close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" class="login-input" placeholder="Email Address" required>
+                <input type="password" id="login-pass" class="login-input" placeholder="Password" required>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

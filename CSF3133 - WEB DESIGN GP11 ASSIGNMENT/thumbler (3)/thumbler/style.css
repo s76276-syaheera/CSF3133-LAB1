@@ -1,0 +1,387 @@
+/* 1.TYPOGRAPHY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fcfcfc; 
+
+/* 2. NAVBAR (HEADER) */
+.navbar {
+    background-color: #3d2b1f; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    color: white;
+    position: sticky; /* Menu melekat di atas */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo Styles */
+.logo-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo-link:hover .brand-name {
+     color: #d7ccc8; 
+    }
+.brand-name {
+     font-size: 1.5rem; font-weight: bold; line-height: 1.2;
+     }
+.tagline {
+     font-size: 0.65rem; color: #ccc; letter-spacing: 0.5px; 
+    }
+
+/* Navigation Links */
+nav ul { display: flex; list-style: none; }
+nav ul li { margin: 0 15px; }
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: 500; 
+    transition: 0.3s; 
+    font-size: 0.95rem;
+}
+nav ul li a:hover, .active { 
+    color: #a68d6d; 
+    border-bottom: 2px solid #a68d6d; 
+    padding-bottom: 5px;
+}
+
+/* Icons Section */
+.nav-icons { display: flex; align-items: center; }
+.nav-icons i { 
+    margin-left: 20px; 
+    cursor: pointer; 
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+.nav-icons i:hover { 
+    transform: scale(1.1); color: #a68d6d; }
+
+/* Cart Badge  */
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.cart-icon-container i {
+     margin-left: 0; }
+#cart-count {
+    position: absolute;
+    top: -8px; right: -8px;
+    background-color: #ff4757; color: white;
+    font-size: 10px; font-weight: bold;
+    padding: 2px 5px; border-radius: 50%;
+    min-width: 16px; text-align: center;
+}
+
+/*  3. HERO SECTION (SLIDER HOME)*/
+
+.hero {
+    height: 100vh; width: 100%;
+    background-size: cover; background-position: center;
+    display: flex; align-items: center;
+    padding: 0 10%; color: white; position: relative;
+    transition: background-image 0.5s ease-in-out;
+}
+.hero::before {
+    content: ""; position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); z-index: 1; /* Dark Overlay*/
+}
+.hero-content {
+    position: relative; z-index: 2;
+    max-width: 600px;
+    display: flex; flex-direction: column;
+    gap: 20px; align-items: flex-start; 
+}
+.hero-content h1 { 
+    font-size: clamp(3rem, 7vw, 5rem); 
+    line-height: 1.1; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.hero-content p { 
+    font-size: 1.2rem; font-weight: 500; 
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.btn { 
+    padding: 14px 35px;
+     background: #a68d6d; 
+    color: white;
+     text-decoration: none; 
+    border-radius: 5px;
+     font-weight: bold;
+      transition: 0.3s;
+    text-transform: uppercase;
+     letter-spacing: 1px;
+}
+.btn:hover 
+{ background: #8d6e63; }
+
+/* Slider Arrows */
+.arrow {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid white;
+    border-radius: 50%;
+     display: flex; 
+     justify-content: center;
+    align-items: center;
+     color: white; cursor: pointer;
+    z-index: 10; 
+    transition: 0.3s;
+}
+.arrow:hover { 
+    background: white; 
+    color: #3d2b1f; }
+.prev {
+     left: 30px; }
+ .next { right: 30px; }
+
+/* 4. PRODUCT GRID (SHOP & SALE) - FIXED IMAGES */
+.product-section { 
+    padding: 60px 8%; 
+}
+
+.grid {
+    display: grid; 
+    /* Adjust minmax to make cards slightly smaller and fit more in a row */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px; 
+    margin-top: 30px;
+}
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    text-align: center; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    transition: transform 0.3s;
+    /* Flexbox ensures the card contents align nicely */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.card:hover { 
+    transform: translateY(-5px); 
+}
+
+/* --- IMAGE FIX IS HERE --- */
+.card img { 
+    width: 100%; 
+    height: 180px; /* Reduced height (was 250px) */
+    object-fit: contain; /* Ensures the whole product is seen, not cropped */
+    margin-bottom: 15px; 
+    border-radius: 8px;
+    padding: 5px; /* Adds a little breathing room inside the box */
+}
+
+.card h3 { 
+    font-size: 1.1rem; 
+    margin-bottom: 5px; 
+    color: #333; 
+}
+
+.card p { 
+    color: #666; 
+    font-weight: 600; 
+    margin-bottom: 15px; 
+}
+
+.add-btn { 
+    background: #5c4b3c; 
+    color: white; 
+    border: none; 
+    padding: 10px 25px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-weight: 600; 
+    transition: 0.3s;
+    width: 100%; /* Make button fill the width */
+}
+
+.add-btn:hover { 
+    background: #3d2b1f; 
+}
+
+/* 5. CART MODAL (POP-UP) */
+.cart-modal {
+    display: none; 
+    position: fixed;
+     z-index: 2000;
+    left: 0;
+     top: 0;
+      width: 100%;
+       height: 100%;
+    overflow: auto;
+     background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+}
+.cart-content {
+    background-color: #fff; 
+    margin: 5% auto;
+     padding: 30px;
+    width: 90%;
+     max-width: 500px;
+    border-radius: 10px;
+     position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.close-cart {
+    color: #aaa; 
+    float: right; 
+    font-size: 28px;
+     font-weight: bold;
+      cursor: pointer;
+}
+.close-cart:hover { color: black; }
+.cart-item {
+    display: flex;
+     justify-content: space-between; 
+     align-items: center;
+    border-bottom: 1px solid #eee;
+     padding: 15px 0;
+}
+.remove-btn {
+    background-color: #ff4757; 
+    color: white; 
+    border: none;
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    cursor: pointer;
+     font-size: 12px;
+}
+.cart-total {
+    margin-top: 25px; 
+    text-align: right;
+     font-size: 1.3rem;
+      font-weight: bold;
+       color: #3d2b1f;
+}
+.checkout-btn {
+    width: 100%; padding: 15px; background-color: #3d2b1f;
+    color: white; border: none; border-radius: 6px;
+    margin-top: 20px; cursor: pointer; font-weight: bold; font-size: 1rem;
+}
+
+/* 6. LOGIN Method*/
+.login-modal {
+    display: none;
+     position: fixed;
+      z-index: 2001;
+    left: 0;
+     top: 0;
+      width: 100%;
+       height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+.login-content {
+    background-color: white; 
+    margin: 10% auto;
+     padding: 40px;
+    width: 90%;
+     max-width: 400px;
+    border-radius: 10px; 
+    position: relative;
+    text-align: center; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.login-content h2 {
+     margin-bottom: 25px;
+      color: #3d2b1f; }
+.login-input {
+    width: 100%; 
+    padding: 12px;
+     margin: 10px 0;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+     background: #f9f9f9;
+}
+.login-btn {
+    width: 100%;
+     padding: 12px;
+      background-color: #3d2b1f;
+    color: white; 
+    border: none;
+     border-radius: 5px;
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-top: 15px;
+     transition: 0.3s;
+}
+.login-btn:hover { 
+    background-color: #5c4b3c; }
+.toggle-link {
+     margin-top: 20px; 
+     font-size: 0.9rem;
+      color: #666; }
+.toggle-link a 
+{ color: #a68d6d; 
+    cursor: pointer; 
+    text-decoration: underline; }
+
+/* 7. ABOUT & FOOTER STYLES */
+.about-box {
+    background: rgba(61, 43, 31, 0.9); padding: 50px;
+    border-radius: 10px; color: white; max-width: 800px; line-height: 1.8;
+}
+.footer-main {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px; padding: 60px 8%; background: #fff; border-top: 1px solid #eee;
+}
+.footer-col h4 { margin-bottom: 20px; font-size: 1.2rem; color: #3d2b1f; }
+.footer-col ul { list-style: none; line-height: 2.2; }
+.footer-col ul li a { text-decoration: none; color: #666; transition: 0.3s; }
+.footer-col ul li a:hover { color: #a68d6d; padding-left: 5px; }
+.social-link { 
+    display: flex; align-items: center; margin-bottom: 15px; 
+    text-decoration: none; color: #555; transition: 0.3s; 
+}
+.social-link:hover { color: #a68d6d; }
+.social-link i { font-size: 1.5rem; margin-right: 15px; width: 25px; text-align: center; }
+.newsletter-input { 
+    width: 100%; padding: 12px; margin-bottom: 10px; 
+    border: 1px solid #ddd; border-radius: 25px; 
+    background: #f4f4f4; text-align: center; 
+}
+.btn-submit { 
+    width: 100%; padding: 12px; background: #5c4b3c; 
+    color: white; border: none; border-radius: 25px; 
+    cursor: pointer; font-weight: bold; transition: 0.3s; 
+}
+.btn-submit:hover { background: #3d2b1f; }
+
+/* 8. MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px; padding: 15px; }
+    nav ul { gap: 10px; font-size: 0.8rem; }
+    .hero { text-align: center; justify-content: center; }
+    .hero-content { align-items: center; }
+    .search-input { font-size: 1.2rem; }
+    .cart-content, .login-content { width: 95%; margin: 20% auto; }
+}

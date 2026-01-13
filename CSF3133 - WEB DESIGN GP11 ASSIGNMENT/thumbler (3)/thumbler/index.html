@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyeNaDa | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-box">
+            <a href="index.html" class="logo-link">
+                <span class="brand-name">SyeNaDa</span>
+                <span class="tagline">Built for Style. Made to Last.</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa fa-user"></i> 
+            <div class="cart-icon-container">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="arrow prev" id="prevBtn"><i class="fas fa-chevron-left"></i></div>
+        <div class="hero-content">
+            <h1>Holiday <br>Tumbler Deals</h1>
+            <p>2 For 20% OFF | 3 For 30% OFF</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+        <div class="arrow next" id="nextBtn"><i class="fas fa-chevron-right"></i></div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: RM <span id="cart-total-price">0.00</span></div>
+            <button class="checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+
+    <div id="login-modal" class="login-modal">
+        <div class="login-content">
+            <span class="close-cart close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" class="login-input" placeholder="Email Address" required>
+                <input type="password" id="login-pass" class="login-input" placeholder="Password" required>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

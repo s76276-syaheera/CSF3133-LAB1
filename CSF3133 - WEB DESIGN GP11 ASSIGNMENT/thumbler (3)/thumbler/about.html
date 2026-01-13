@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyeNaDa | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-box">
+            <a href="index.html" class="logo-link">
+                <span class="brand-name">SyeNaDa</span>
+                <span class="tagline">Built for Style. Made to Last.</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa fa-user"></i> 
+            <div class="cart-icon-container">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url('photo1.jpeg'); justify-content: center;">
+        <div class="about-box">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; font-style: italic;">About Us</h1>
+            <p style="font-size: 1.1rem; line-height: 1.6;">
+                Tumbler Shop is an online store dedicated to providing stylish, high-quality, and customizable tumblers for everyday use, special gifts, and corporate branding. We believe that a tumbler is more than just a drink container — it is a reflection of personal style and creativity.
+                <br><br>
+                Our platform allows customers to design their own tumblers by choosing colors, sizes, and adding personalized names, logos, or messages. This makes every tumbler unique and meaningful for its owner. Whether you are a student, a gift shopper, or a business owner, our products are designed to suit your needs and lifestyle.
+                <br><br>
+                We are committed to offering a smooth and enjoyable shopping experience. From browsing products to placing customized orders, we focus on clarity, convenience, and customer satisfaction. At Tumbler Shop, we combine practicality, creativity, and modern design to deliver tumblers that our customers can trust and enjoy.
+            </p>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: RM <span id="cart-total-price">0.00</span></div>
+            <button class="checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+
+    <div id="login-modal" class="login-modal">
+        <div class="login-content">
+            <span class="close-cart close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" class="login-input" placeholder="Email Address" required>
+                <input type="password" id="login-pass" class="login-input" placeholder="Password" required>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
