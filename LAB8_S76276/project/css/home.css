@@ -1,0 +1,37 @@
+/* Homepage custom styles for FutureTech Solutions */
+:root{
+  --ft-primary: #007bff; /* electric blue */
+  --ft-dark: #002147; /* dark navy */
+}
+
+.hero{
+  min-height: 62vh;
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+}
+.hero .overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,33,71,0.6), rgba(0,33,71,0.5));
+}
+.hero .container{z-index:2}
+.hero .btn-primary{
+  background: var(--ft-primary);
+  border: none;
+}
+
+.icon{
+  font-size: 2.25rem;
+}
+
+@media (max-width: 767px){
+  .hero{min-height:48vh}
+  .display-4{font-size:1.75rem}
+}
+
+/* Utility tweaks */
+.card .icon{font-size:2rem}
+.card h5{color:var(--ft-dark)}

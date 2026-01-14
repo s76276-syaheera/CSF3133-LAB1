@@ -1,0 +1,9 @@
+/* Theme wrapper for root-level theme pages
+   Import the project's main styles so top-level pages can reuse them */
+@import url('../project/css/styles.css');
+
+/* Add small theme customizations here if needed */
+body {
+  /* Example: ensure a neutral background for theme pages */
+  background-color: #f8f9fa;
+}

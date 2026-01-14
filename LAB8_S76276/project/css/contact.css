@@ -1,0 +1,8 @@
+/* Contact page styles - Glassmorphism and split layout */
+:root{--ft-dark:#002147;--ft-slate:#6c757d;--ft-accent:#007bff}
+.contact-split .contact-details{background:linear-gradient(180deg,rgba(0,33,71,0.95),rgba(0,33,71,0.85));padding:3rem}
+.contact-split .icon-circle{font-size:1.15rem}
+.glass-form{background:rgba(255,255,255,0.06);backdrop-filter: blur(8px);border:1px solid rgba(255,255,255,0.08)}
+.glass-form .form-control{box-shadow:0 6px 18px rgba(10,10,10,0.06)}
+.glass-form .btn{background:var(--ft-accent);border:none}
+@media(max-width:767px){.contact-split .contact-details{padding:2rem}.glass-form{margin-top:1rem}}
